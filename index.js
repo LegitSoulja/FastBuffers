@@ -36,11 +36,11 @@ module.exports = {
         }
         writeInt32BE(n) {
             this.buffer.writeInt32BE(n, this.index)
-            this.index += 3;
+            this.index += 4;
         }
         writeInt32LE(n) {
             this.buffer.writeInt32LE(n, this.index)
-            this.index += 3;
+            this.index += 4;
         }
         writeUInt8(n) {
             this.buffer.writeUInt8(n, this.index++)
@@ -55,11 +55,11 @@ module.exports = {
         }
         writeUInt32BE(n) {
             this.buffer.writeUInt32BE(n, this.index)
-            this.index += 3;
+            this.index += 4;
         }
         writeUInt32LE(n) {
             this.buffer.writeUInt32LE(n, this.index)
-            this.index += 3;
+            this.index += 4;
         }
         toBuffer() {
             return this.buffer;
@@ -125,22 +125,22 @@ module.exports = {
         }
         readInt32BE() {
             var data = this.buffer.readInt32BE(this.index);
-            this.index += 3;
+            this.index += 4;
             return data;
         }
         readInt32LE() {
             var data = this.buffer.readInt32LE(this.index);
-            this.index += 3;
+            this.index += 4;
             return data;
         }
         readUInt32BE() {
             var data = this.buffer.readUInt32BE(this.index);
-            this.index += 3;
+            this.index += 4;
             return data;
         }
         readUInt32LE() {
             var data = this.buffer.readUInt32LE(this.index);
-            this.index += 3;
+            this.index += 4;
             return data;
         }
 
